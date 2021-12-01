@@ -80,11 +80,11 @@ if args.method == 'none':
     args.s_time = time.strftime("%Y%m%d-%H%M%S")
 
 if args.method == 'rsps2':
-    args.save = '../experiments/nasbench201/{}-search-{}-{}-{}'.format(
+    args.save = '../baselines/nasbench201/{}-search-{}-{}-{}'.format(
         'rsps+', args.save, args.s_time, args.seed)
-elif args.method == 'none+':
-    args.save = '../experiments/nasbench201/{}-search-{}-{}-{}'.format(
-        'none', args.save, args.s_time, args.seed)
+elif args.method in ['none', 'none+', 'rsps+']:
+    args.save = '../baselines/nasbench201/{}-search-{}-{}-{}'.format(
+        args.method, args.save, args.s_time, args.seed)
 else:
     args.save = '../experiments/nasbench201/{}-search-{}-{}-{}'.format(
         args.method, args.save, args.s_time, args.seed)
@@ -100,7 +100,7 @@ if not args.arch_weight_decay == 1e-3:
 if not args.method == 'gdas':
     args.save += '-pc-' + str(args.k)
 
-if args.method == 'none':
+if args.method in ['none', 'none+']:
     utils.create_exp_dir(args.save, scripts_to_save=glob.glob('*.py'))
 
 log_format = '%(asctime)s %(message)s'

@@ -45,7 +45,17 @@ bash darts-proj-201.sh --resume_epoch 100 --resume_expid search-darts-201-1
 ```
 bash blank-201.sh
 bash blank-proj-201.sh --resume_expid search-blank-201-1
-```
+
+#### DARTS- training and projection
+
+bash darts--201.sh --seed {seed}
+bash darts--proj-201.sh --resume_expid search-darts--201-{seed}
+
+#### DARTS- with fix-alpha training and projection
+
+bash blank--201.sh --seed {seed}
+bash blank--proj-201.sh --resume_expid search-blank--201-{seed}
+
 
 
 ## Experiments on S1-S4
@@ -65,7 +75,19 @@ bash darts-proj-sota.sh --space [s1/s2/s3/s4] --dataset [cifar10/cifar100/svhn] 
 ```
 bash blank-sota.sh --space [s1/s2/s3/s4] --dataset [cifar10/cifar100/svhn]
 bash blank-proj-201.sh --space [s1/s2/s3/s4] --dataset [cifar10/cifar100/svhn] --resume_expid search-blank-sota-[s1/s2/s3/s4]-2
-```
+
+#### DARTS- training and projection
+
+The dataset options shown above are still available for this algorithm, however cifar10 is the default and the only dataset we reported results on, so they are omitted from replication instructions.
+
+bash darts-sota.sh --space [s1/s2/s3/s4]
+bash darts-proj-sota.sh --space [s1/s2/s3/s4] --resume_expid search-darts-sota-[s1/s2/s3/s4]-2
+
+#### DARTS- with fix-alpha training and projection
+
+bash blank-sota.sh --space [s1/s2/s3/s4]
+bash blank-proj-201.sh --space [s1/s2/s3/s4] --resume_expid search-blank-sota-[s1/s2/s3/s4]-2
+
 
 #### Evaluation
 ```
@@ -75,7 +97,7 @@ bash eval-svhn.sh --arch [genotype_name]
 ```
 
 
-## Expeirments on DARTS Space
+## Experiments on DARTS Space
 
 #### Supernet training
 ```
