@@ -1,5 +1,5 @@
-# picking-up-pieces
-Anonymized code for ICLR submission under review, titled "Picking up the Pieces: Separately Evaluating Supernet Training and Architecture Selection"
+# supernet-two-stages
+Anonymized code for AutoMLConf submission under review, titled "Picking up the Pieces: Separately Evaluating Supernet Training and Architecture Selection"
 The paper consists of a case study and main experimental portion, which are implemented separately in code.
 
 ## Case study
