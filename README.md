@@ -1,5 +1,5 @@
 # supernet-two-stages
-Anonymized code for AutoMLConf submission under review, titled "Picking up the Pieces: Separately Evaluating Supernet Training and Architecture Selection"
+Anonymized code for NeurIPS submission under review, titled "Understanding Architecture Selection in Supernet Neural Architecture Search"
 The paper consists of a case study and main experimental portion, which are implemented separately in code.
 
 ## Case study
