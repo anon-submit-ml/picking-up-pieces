@@ -1,5 +1,5 @@
 # supernet-two-stages
-Anonymized code for NeurIPS submission under review, titled "Understanding Architecture Selection in Supernet Neural Architecture Search"
+Anonymized code for NeurIPS submission under review, titled "Understanding Architecture Selection in Supernet Neural Architecture Search".
 The paper consists of a case study and main experimental portion, which are implemented separately in code.
 
 ## Case study
